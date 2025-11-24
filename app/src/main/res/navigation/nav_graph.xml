@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/startFragment"
-        android:name="com.example.kuchniapolska.StartFragment"
+        android:name="com.example.kuchniapolska.ui.StartFragment"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" >
         <action
@@ -16,34 +16,28 @@
     </fragment>
     <fragment
         android:id="@+id/menuChoiceFragment"
-        android:name="com.example.kuchniapolska.MenuChoiceFragment"
+        android:name="com.example.kuchniapolska.ui.MenuChoiceFragment"
         android:label="fragment_menu_choice"
         tools:layout="@layout/fragment_menu_choice" >
         <action
             android:id="@+id/action_menuChoiceFragment_to_readyMealFragment2"
             app:destination="@id/readyMealFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/readyMealFragment"
-        android:name="com.example.kuchniapolska.ReadyMealFragment"
-        android:label="fragment_ready_meal"
-        tools:layout="@layout/fragment_ready_meal" >
         <action
-            android:id="@+id/action_readyMealFragment_to_customMealFragment"
+            android:id="@+id/action_menuChoiceFragment_to_customMealFragment2"
             app:destination="@id/customMealFragment" />
     </fragment>
     <fragment
-        android:id="@+id/customMealFragment"
-        android:name="com.example.kuchniapolska.CustomMealFragment"
-        android:label="fragment_custom_meal"
-        tools:layout="@layout/fragment_custom_meal" >
+        android:id="@+id/readyMealFragment"
+        android:name="com.example.kuchniapolska.ui.ReadyMealFragment"
+        android:label="fragment_ready_meal"
+        tools:layout="@layout/fragment_ready_meal" >
         <action
-            android:id="@+id/action_customMealFragment_to_summaryFragment"
+            android:id="@+id/action_readyMealFragment_to_summaryFragment"
             app:destination="@id/summaryFragment" />
     </fragment>
     <fragment
         android:id="@+id/summaryFragment"
-        android:name="com.example.kuchniapolska.SummaryFragment"
+        android:name="com.example.kuchniapolska.ui.SummaryFragment"
         android:label="fragment_summary"
         tools:layout="@layout/fragment_summary" >
         <action
@@ -52,7 +46,16 @@
     </fragment>
     <fragment
         android:id="@+id/totalBarFragment"
-        android:name="com.example.kuchniapolska.TotalBarFragment"
+        android:name="com.example.kuchniapolska.ui.TotalBarFragment"
         android:label="fragment_total_bar"
         tools:layout="@layout/fragment_total_bar" />
+    <fragment
+        android:id="@+id/customMealFragment"
+        android:name="com.example.kuchniapolska.ui.CustomMealFragment"
+        android:label="fragment_custom_meal"
+        tools:layout="@layout/fragment_custom_meal" >
+        <action
+            android:id="@+id/action_customMealFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
 </navigation>
