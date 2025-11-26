@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.MenuChoiceFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -14,5 +15,18 @@
         android:textSize="30sp"
         android:gravity="center"
         android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/Gotowiec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gotowe dania"
+        />
+    <Button
+        android:id="@+id/Wlasne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Komponuj własne danie"
+        />
 
 </LinearLayout>
