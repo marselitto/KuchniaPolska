@@ -1,14 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.CustomMealFragment">
+    tools:context=".ui.ReadyMealFragment"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="Skomponuj swój zestaw"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:padding="10dp"/>
 
-</FrameLayout>
+    <RadioGroup
+        android:layout_marginTop="30dp"
+        android:id="@+id/radio_group_soup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybierz zupę: "
+            />
+
+        <RadioButton
+            android:id="@+id/Zupa1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rosół"
+            android:onClick="radio_button_click"
+            />
+        <RadioButton
+            android:id="@+id/Zupa2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pomidorowa"
+            android:onClick="radio_button_click"
+            />
+        <RadioButton
+            android:id="@+id/Zupa3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ogórkowa"
+            android:onClick="radio_button_click"
+            />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:id="@+id/radio_group_meal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybierz zupę: "
+            />
+
+        <RadioButton
+            android:id="@+id/Obiad1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rosół"
+            android:onClick="radio_button_click"
+            />
+        <RadioButton
+            android:id="@+id/Obiad2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pomidorowa"
+            android:onClick="radio_button_click"
+            />
+        <RadioButton
+            android:id="@+id/Obiad3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ogórkowa"
+            android:onClick="radio_button_click"
+            />
+
+    </RadioGroup>
+
+</LinearLayout>

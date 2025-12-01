@@ -11,12 +11,30 @@
         android:label="Home" />
 
     <fragment
-        android:id="@+id/orderFragment"
+        android:id="@+id/menuChoiceFragment"
         android:name="com.example.kuchniapolska.ui.MenuChoiceFragment"
-        android:label="Menu" />
+        android:label="Menu">
+
+        <action
+            android:id="@+id/action_menuChoiceFragment_to_readyMealFragment"
+            app:destination="@id/readyMealFragment" />
+
+    </fragment>
+
 
     <fragment
         android:id="@+id/summaryFragment"
         android:name="com.example.kuchniapolska.ui.SummaryFragment"
         android:label="Summary" />
+    <fragment
+        android:id="@+id/readyMealFragment"
+        android:name="com.example.kuchniapolska.ui.ReadyMealFragment"
+        android:label="fragment_custom_meal"
+        tools:layout="@layout/fragment_custom_meal" />
+    <fragment
+        android:id="@+id/customMealFragment"
+        android:name="com.example.kuchniapolska.ui.CustomMealFragment"
+        android:label="CustomMealFragment" />
+
+
 </navigation>

@@ -7,7 +7,7 @@
         android:title="Start"
         />
     <item
-        android:id="@+id/orderFragment"
+        android:id="@+id/menuChoiceFragment"
         android:icon="@drawable/ic_order"
         android:title="Zamówienie"
         />

@@ -38,6 +38,7 @@ class ReadyMealFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_ready_meal, container, false)
     }
 
+
     companion object {
         /**
          * Use this factory method to create a new instance of

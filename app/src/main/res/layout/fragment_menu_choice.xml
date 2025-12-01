@@ -17,13 +17,13 @@
         android:padding="10dp"/>
 
     <Button
-        android:id="@+id/Gotowiec"
+        android:id="@+id/GotowiecButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Gotowe dania"
         />
     <Button
-        android:id="@+id/Wlasne"
+        android:id="@+id/WlasneButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Komponuj własne danie"
