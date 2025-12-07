@@ -1,126 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ReadyMealFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.ReadyMealFragment"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:text="Gotowe zestawy"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:padding="10dp"/>
 
+    <RadioGroup
+        android:layout_marginTop="30dp"
+        android:id="@+id/radio_group_soup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Zestaw obiadowy"
-            android:textSize="30sp"
-            android:gravity="center"
-            android:padding="10dp"/>
-
-        <RadioGroup
-            android:id="@+id/radio_group_soup"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:padding="15dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Zupy"/>
-
-            <RadioButton
-                android:id="@+id/Zupa1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rosół"/>
-
-            <RadioButton
-                android:id="@+id/Zupa2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Pomidorowa"/>
-
-            <RadioButton
-                android:id="@+id/Zupa3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Żurek"/>
-        </RadioGroup>
-
-        <RadioGroup
-            android:id="@+id/radio_group_meal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:padding="15dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Dania główne"/>
-
-            <RadioButton
-                android:id="@+id/Obiad1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Kotlet schabowy z ziemniakami i surówką"/>
-
-            <RadioButton
-                android:id="@+id/Obiad2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Pierogi ruskie"/>
-
-            <RadioButton
-                android:id="@+id/Obiad3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Placki ziemniaczane ze śmietaną"/>
-        </RadioGroup>
-
-        <RadioGroup
-            android:id="@+id/radio_group_drink"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:padding="15dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Napoje"/>
-
-            <RadioButton
-                android:id="@+id/Drink1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Cola 0,5l"/>
-
-            <RadioButton
-                android:id="@+id/Drink2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sok pomarańczowy"/>
-
-            <RadioButton
-                android:id="@+id/Drink3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Woda niegazowana 0,5l"/>
-        </RadioGroup>
-
-        <Button
-            android:id="@+id/btnOrder"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:padding="12dp"
-            android:text="Złóż zamówienie"
+            android:text="Wybierz zupę: "
             />
 
-    </LinearLayout>
-</ScrollView>
+        <RadioButton
+            android:id="@+id/Zupa1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rosół"
+            />
+        <RadioButton
+            android:id="@+id/Zupa2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pomidorowa"
+            />
+        <RadioButton
+            android:id="@+id/Zupa3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ogórkowa"
+            />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:id="@+id/radio_group_meal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybierz danie główne: "
+            />
+
+        <RadioButton
+            android:id="@+id/Obiad1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schabowy z ziemniakami"
+            />
+        <RadioButton
+            android:id="@+id/Obiad2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mielony z ziemniakami"
+            />
+        <RadioButton
+            android:id="@+id/Obiad3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pierogi ruskie"
+            />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:id="@+id/radio_group_drink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybierz napój: " />
+
+        <RadioButton
+            android:id="@+id/Napoj1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Woda" />
+
+        <RadioButton
+            android:id="@+id/Napoj2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cola" />
+
+        <RadioButton
+            android:id="@+id/Napoj3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sok jabłkowy" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zamów"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

@@ -1,14 +1,10 @@
-package com.example.kuchniapolska.viewmodel
+package com.example.kuchniapolska.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.kuchniapolska.model.Order
 
 class OrderViewModel : ViewModel() {
-
-    private val _order = MutableLiveData<Order?>()
-    val order: LiveData<Order?> = _order
 
     private val prices = mapOf(
         "Rosół" to 10.0,
@@ -22,8 +18,19 @@ class OrderViewModel : ViewModel() {
         "Sok jabłkowy" to 6.0
     )
 
-    fun setOrder(newOrder: Order) {
-        _order.value = newOrder
+    private val _soup = MutableLiveData<String?>()
+    val soup: LiveData<String?> = _soup
+
+    private val _meal = MutableLiveData<String?>()
+    val meal: LiveData<String?> = _meal
+
+    private val _drink = MutableLiveData<String?>()
+    val drink: LiveData<String?> = _drink
+
+    fun setOrder(soup: String?, meal: String?, drink: String?) {
+        _soup.value = soup
+        _meal.value = meal
+        _drink.value = drink
     }
 
     fun getPrice(item: String?): Double {
@@ -31,11 +38,12 @@ class OrderViewModel : ViewModel() {
     }
 
     fun calculateTotalPrice(): Double {
-        val currentOrder = _order.value ?: return 0.0
-        return getPrice(currentOrder.soup) + getPrice(currentOrder.meal) + getPrice(currentOrder.drink)
+        return getPrice(_soup.value) + getPrice(_meal.value) + getPrice(_drink.value)
     }
 
     fun clearOrder() {
-        _order.value = null
+        _soup.value = null
+        _meal.value = null
+        _drink.value = null
     }
 }
