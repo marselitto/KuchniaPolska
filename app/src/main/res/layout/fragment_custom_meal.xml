@@ -1,93 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ReadyMealFragment"
-    android:orientation="vertical">
+    android:clipToPadding="false"
+    android:paddingBottom="90dp"
+    tools:context=".ui.ReadyMealFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Skomponuj swój zestaw"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:padding="10dp"/>
+        tools:context=".ui.ReadyMealFragment"
+        android:orientation="vertical">
 
-    <RadioGroup
-        android:layout_marginTop="30dp"
-        android:id="@+id/radio_group_soup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        >
+        <!-- TODO: Update blank fragment layout -->
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Wybierz zupę: "
-            />
-
-        <RadioButton
-            android:id="@+id/Zupa1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rosół"
-            android:onClick="radio_button_click"
-            />
-        <RadioButton
-            android:id="@+id/Zupa2"
+            android:text="Skomponuj swój zestaw"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:layout_marginTop="30dp"
+            android:id="@+id/radio_group_base"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pomidorowa"
-            android:onClick="radio_button_click"
-            />
-        <RadioButton
-            android:id="@+id/Zupa3"
+            android:padding="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baza "
+                />
+
+            <RadioButton
+                android:id="@+id/Baza1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frytyki"
+
+                />
+            <RadioButton
+                android:id="@+id/Baza2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ryż biały"
+
+                />
+            <RadioButton
+                android:id="@+id/Baza3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Makaron"
+
+                />
+
+            <RadioButton
+                android:id="@+id/Baza4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ziemniaki"
+
+                />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:id="@+id/radio_group_protein"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ogórkowa"
-            android:onClick="radio_button_click"
-            />
+            android:padding="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zródlo bialka "
+                />
 
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/Bialko1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kurczak grillowany"
 
-    <RadioGroup
-        android:layout_marginTop="10dp"
-        android:id="@+id/radio_group_meal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Wybierz zupę: "
-            />
+                />
 
-        <RadioButton
-            android:id="@+id/Obiad1"
+            <RadioButton
+                android:id="@+id/Bialko2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Schabowy"
+
+                />
+
+            <RadioButton
+                android:id="@+id/Bialko3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mielony"
+                />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:id="@+id/radio_group_extras"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rosół"
-            android:onClick="radio_button_click"
-            />
-        <RadioButton
-            android:id="@+id/Obiad2"
+            android:padding="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dodatki"
+                />
+
+            <RadioButton
+                android:id="@+id/Dodatki1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Surówka z marchewki i jabłka"
+
+                />
+
+            <RadioButton
+                android:id="@+id/Dodatki2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Surówka z buraczków"
+
+                />
+
+            <RadioButton
+                android:id="@+id/Dodatki3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Surówka z białej kapusty"
+                />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:id="@+id/radio_group_drink"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pomidorowa"
-            android:onClick="radio_button_click"
-            />
-        <RadioButton
-            android:id="@+id/Obiad3"
+            android:padding="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Napoje"
+                />
+
+            <RadioButton
+                android:id="@+id/Drink1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cola 0,5l"
+
+                />
+            <RadioButton
+                android:id="@+id/Drink2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sok pomarańczowy"
+                />
+            <RadioButton
+                android:id="@+id/Drink3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Woda niegazowana 0,5l"
+                />
+
+        </RadioGroup>
+        <Button
+            android:id="@+id/btnOrder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ogórkowa"
-            android:onClick="radio_button_click"
+            android:layout_margin="16dp"
+            android:padding="12dp"
+            android:text="Złóż zamówienie"
             />
 
-    </RadioGroup>
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

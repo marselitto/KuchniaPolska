@@ -14,19 +14,26 @@
         android:text="Wybierz typ zamówienia"
         android:textSize="30sp"
         android:gravity="center"
-        android:padding="10dp"/>
+        android:padding="15dp"/>
 
     <Button
+        android:layout_marginTop="15sp"
+        android:padding="10dp"
         android:id="@+id/GotowiecButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Gotowe dania"
+        android:layout_width="400sp"
+        android:layout_height="300sp"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:text="Gotowe zestawy"
         />
     <Button
         android:id="@+id/WlasneButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Komponuj własne danie"
+        android:layout_gravity="center"
+        android:layout_width="400sp"
+        android:layout_height="300sp"
+        android:textSize="30dp"
+        android:text="Skomponuj własny zestaw"
         />
+
 
 </LinearLayout>

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
@@ -8,7 +8,16 @@
     <fragment
         android:id="@+id/startFragment"
         android:name="com.example.kuchniapolska.ui.StartFragment"
-        android:label="Home" />
+        android:label="Home" >
+
+        <action
+            android:id="@+id/action_startFragment_to_menuChoiceFragment"
+            app:destination="@id/menuChoiceFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
 
     <fragment
         android:id="@+id/menuChoiceFragment"
@@ -17,24 +26,35 @@
 
         <action
             android:id="@+id/action_menuChoiceFragment_to_readyMealFragment"
-            app:destination="@id/readyMealFragment" />
+            app:destination="@id/readyMealFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_out_right" />
 
+        <action
+            android:id="@+id/action_menuChoiceFragment_to_customMealFragment"
+            app:destination="@id/customMealFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
-
 
     <fragment
         android:id="@+id/summaryFragment"
         android:name="com.example.kuchniapolska.ui.SummaryFragment"
         android:label="Summary" />
+
     <fragment
         android:id="@+id/readyMealFragment"
         android:name="com.example.kuchniapolska.ui.ReadyMealFragment"
-        android:label="fragment_custom_meal"
-        tools:layout="@layout/fragment_custom_meal" />
+        android:label="ReadyMealFragment"
+        tools:layout="@layout/fragment_ready_meal" />
+
     <fragment
         android:id="@+id/customMealFragment"
         android:name="com.example.kuchniapolska.ui.CustomMealFragment"
         android:label="CustomMealFragment" />
-
 
 </navigation>
