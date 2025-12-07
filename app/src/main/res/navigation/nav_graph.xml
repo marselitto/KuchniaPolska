@@ -17,7 +17,18 @@
 
         <action
             android:id="@+id/action_menuChoiceFragment_to_readyMealFragment"
-            app:destination="@id/readyMealFragment" />
+            app:destination="@id/readyMealFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_menuChoiceFragment_to_customMealFragment"
+            app:destination="@id/customMealFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
 
     </fragment>
 
@@ -34,7 +45,11 @@
         tools:layout="@layout/fragment_custom_meal" >
         <action
             android:id="@+id/action_readyMealFragment_to_summaryFragment"
-            app:destination="@id/summaryFragment" />
+            app:destination="@id/summaryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment

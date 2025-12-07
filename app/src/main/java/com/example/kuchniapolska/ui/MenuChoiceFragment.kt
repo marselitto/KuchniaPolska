@@ -55,7 +55,7 @@ class MenuChoiceFragment : Fragment() {
         }
 
         binding.WlasneButton.setOnClickListener {
-            findNavController().navigate(R.id.customMealFragment)
+            findNavController().navigate(R.id.action_menuChoiceFragment_to_customMealFragment)
         }
     }
 
